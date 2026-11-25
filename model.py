@@ -52,8 +52,15 @@ def decode_int(token_id, itos):
     # Trả về giá trị tại chỉ mục token_id
     return itos[token_id]
 
-# Step 7 - decode_ids (not yet solved)
-# TODO: implement
+# Step 7 - decode_ids
+def decode_ids(ids, itos):
+    """Decode a list of token ids into a string using itos."""
+    # Trả về text thuộc các chỉ mục ids
+    text = []
+    for i in ids:
+        text.append(itos[i])
+    res = ''.join(text)
+    return res
 
 # Step 8 - make_1d_array (not yet solved)
 # TODO: implement
