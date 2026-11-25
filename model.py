@@ -22,8 +22,14 @@ def build_stoi(vocab):
         stoi[ch] = i 
     return stoi
 
-# Step 3 - build_itos (not yet solved)
-# TODO: implement
+# Step 3 - build_itos
+def build_itos(vocab):
+    """Return a dict mapping each index 0..len(vocab)-1 to its character."""
+    # Đảo ngược lại thứ tự gán kí tự với chỉ mục
+    itos = {}
+    for i, ch in enumerate(vocab):
+        itos[i] = ch 
+    return itos
 
 # Step 4 - encode_char (not yet solved)
 # TODO: implement
