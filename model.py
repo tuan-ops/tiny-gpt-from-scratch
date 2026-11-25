@@ -13,8 +13,14 @@ def build_vocab(text):
     char = sorted(list(set(''.join(text))))
     return char
 
-# Step 2 - build_stoi (not yet solved)
-# TODO: implement
+# Step 2 - build_stoi
+def build_stoi(vocab):
+    """Return a dict mapping each character in vocab to its index."""
+    # Gắn các kí tự trong vocab với các chỉ mục của chính nó
+    stoi = {}
+    for i, ch in enumerate(vocab):
+        stoi[ch] = i 
+    return stoi
 
 # Step 3 - build_itos (not yet solved)
 # TODO: implement
