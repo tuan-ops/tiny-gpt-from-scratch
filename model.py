@@ -37,8 +37,14 @@ def encode_char(ch, stoi):
     # Trả về chỉ mục của ch trong từ điển stoi
     return stoi[ch]
 
-# Step 5 - encode_string (not yet solved)
-# TODO: implement
+# Step 5 - encode_string
+def encode_string(text, stoi):
+    """Encode a full string into a list of token ids using stoi."""
+    # Trả về một mảng chỉ mục các kí tự trong text ứng với danh sách stoi
+    idx = []
+    for i in text:
+        idx.append(stoi[i])
+    return idx
 
 # Step 6 - decode_int (not yet solved)
 # TODO: implement
